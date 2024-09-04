@@ -27,12 +27,18 @@ Build file:
 const std = @import("std");
 
 pub fn build(b: *std.build) void {
-    const exe = b.addexecutable(.{
+    const exe = b.addExecutable(.{
         .name = "hello",
         .root_source_file = b.path("./src/main.zig"),
         .target = b.host,
     });
 
-    b.installartifact(exe);
+    b.installArtifact(exe);
+
+    // TO RUN THE PROJECT with: Zig build run
+    const run_exe = b.addRunArtifact(exec);
+
+    const run_step = b.step("run", "Run the application");
+    run_step.dependOn(&run_exe.step);
 }
 ```
