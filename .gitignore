@@ -1,4 +1,4 @@
-# ZIG
+# ZIG ==============================================
 
 */.zig-cache/
 */zig-out/
@@ -8,3 +8,38 @@
 
 # Leave this in here for older zig versions
 */zig-cache/
+
+# CSHARP ===========================================
+
+# Rider
+.idea/
+*.iml
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+bin/
+obj/
+log/
+
+# Visual Studio cache/options directory
+.vs/
+
+# NuGet Packages
+packages/
+
+# Others
+*.bak
+*.tmp
+*.cache
